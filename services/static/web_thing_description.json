@@ -1,0 +1,16 @@
+{
+  "title": "Webian Kiosk",
+  "actions": {
+    "loadURL": {
+      "input": {"type": "string"},
+      "links": [{"href": "/actions/loadURL"}]
+    }
+  },
+  "links": [
+    {
+      "rel": "alternate",
+      "mediaType": "text/html",
+      "href": "/"
+    }
+  ]
+}

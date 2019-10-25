@@ -1,0 +1,13 @@
+{
+  "name": "Webian Kiosk",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/icon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
