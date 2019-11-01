@@ -18,6 +18,7 @@ $ cd shell-kiosk
 $ npm install
 $ npm start
 ```
+The kiosk client should then start up full screen and the remote web interface should be running at http://localhost:8080
 
 The web client uses Electron and the web server uses NodeJS.
 
