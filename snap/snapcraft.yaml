@@ -45,7 +45,7 @@ parts:
         esac
         npm install electron-packager &&
         ./node_modules/.bin/electron-packager . --overwrite --platform=linux --arch=$ARCH --output=release-build --prune=true
-        cp -v -R ./webian-shell-kiosk-linux-$ARCH $SNAPCRAFT_PART_INSTALL/webian-shell-kiosk
+        cp -v -R /root/parts/webian-shell-kiosk/build/shell-kiosk-linux-$ARCH $SNAPCRAFT_PART_INSTALL/webian-shell-kiosk
     stage-packages:
     - libasound2
     - libgconf-2-4
