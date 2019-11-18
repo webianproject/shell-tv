@@ -5,9 +5,6 @@ description: Kiosk software powered by the web
 base: core18
 confinement: strict
 grade: devel
-architectures:
-    - build-on: amd64
-      exrun-on: armhf
 
 apps:
   webian-shell-kiosk:
