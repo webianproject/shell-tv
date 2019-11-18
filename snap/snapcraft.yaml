@@ -5,6 +5,9 @@ description: Kiosk software powered by the web
 base: core18
 confinement: strict
 grade: devel
+architectures:
+    - build-on: amd64
+      exrun-on: armhf
 
 apps:
   webian-shell-kiosk:
@@ -44,8 +47,8 @@ parts:
           *) echo "ERROR: electron does not support the '$SNAPCRAFT_ARCH_TRIPLET' architecture" && exit 1;;
         esac
         npm install electron-packager &&
-        ./node_modules/.bin/electron-packager . --overwrite --platform=linux --arch=$ARCH --output=release-build --prune=true
-        cp -v -R /root/parts/webian-shell-kiosk/build/shell-kiosk-linux-$ARCH $SNAPCRAFT_PART_INSTALL/webian-shell-kiosk
+        ELECTRON_GET_USE_PROXY=1 ./node_modules/.bin/electron-packager . --overwrite --platform=linux --arch=$ARCH --output=release-build --prune=true
+        cp -v -R ./webian-shell-kiosk-linux-$ARCH $SNAPCRAFT_PART_INSTALL/webian-shell-kiosk
     stage-packages:
     - libasound2
     - libgconf-2-4
