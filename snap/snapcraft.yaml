@@ -6,6 +6,9 @@ base: core18
 confinement: strict
 grade: devel
 
+architectures:
+  - build-on: [armhf, arm64, amd64, i386]
+  
 apps:
   webian-shell-kiosk:
     daemon: simple
