@@ -1,5 +1,5 @@
 {
-  "name": "shell-kiosk",
+  "name": "webian-shell-kiosk",
   "version": "0.0.1",
   "description": "A graphical shell for kiosks",
   "main": "main.js",
