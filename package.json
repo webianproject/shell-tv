@@ -7,10 +7,14 @@
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webianproject/shell-kiosk.git"
+  },
   "author": "Ben Francis",
   "license": "GPL-3.0",
   "devDependencies": {
-    "electron": "^6.0.6"
+    "electron": "^7.1.2"
   },
   "dependencies": {
     "express": "^4.17.1"
