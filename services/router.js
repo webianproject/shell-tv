@@ -10,6 +10,6 @@ router.use(express.json());
 // Serve action requests
 router.use('/actions', actionsController);
 // Serve static files
-router.use(express.static('services/static'));
+router.use(express.static('./services/static'));
 
 module.exports = router;

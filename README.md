@@ -22,6 +22,15 @@ The kiosk client should then start up full screen and the remote web interface s
 
 The web client uses Electron and the web server uses NodeJS.
 
+## Install on Ubuntu Core 
+
+```
+$ sudo snap install --edge webian-shell-kiosk  
+$ sudo snap connect webian-shell-kiosk:browser-sandbox :browser-support
+$ sudo snap connect webian-shell-kiosk:x11-plug webian-shell-kiosk:x11
+$ sudo snap restart webian-shell-kiosk
+```
+
 ## Copyrights, Trademarks and Licensing
 
 © Ben Francis 2019
