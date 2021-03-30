@@ -1,5 +1,7 @@
 # Webian Shell Kiosk
 
+**Note:** Development is currently continuing downstream at https://github.com/krellian/kiosk
+
 A graphical shell for the web (kiosk version).
 
 This application is for interactive kiosks and digital signage which can be remotely controlled over the Internet.
@@ -23,6 +25,8 @@ The kiosk client should then start up full screen and the remote web interface s
 The web client uses Electron and the web server uses NodeJS.
 
 ## Install on Ubuntu Core 
+
+(**Note:** Currently disabled pending snap store review)
 
 ```
 $ sudo snap install --edge webian-shell-kiosk  
